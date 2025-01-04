@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arf Sabiti</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Times New Roman", sans-serif;
+            color: black;
+            background: url('fonsyf2.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            line-height: 1.8; /* Satır arası boşluk */
+        }
+        .blur-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(8px);
+            z-index: 0;
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 900px;
+            margin: 50px auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: black;
+            margin: 0 15px;
+            text-decoration: none;
+            border-bottom: 1px solid black;
+            font-family: "Bodoni MT", serif;
+            font-size: 20px;
+        }
+        .english-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px 15px;
+            font-size: 15px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .english-button:hover {
+            background-color: #0056b3;
+        }
+        h1, h2 {
+            font-size: 26px;
+            margin-bottom: 25px; /* Başlık altı boşluğu */
+            font-family: "Times New Roman", sans-serif;
+        }
+        h2 {
+            margin-bottom: 15px; /* Başlık ve metin arasındaki boşluk azaltıldı */
+        }
+        p, ul {
+            margin-bottom: 30px; /* Paragraf ve liste altı boşluğu */
+            font-size: 17px;
+            font-family: "Times New Roman", sans-serif;
+            line-height: 1.8; /* Satır arası boşluk */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 50px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .formula-image {
+            width: 45%;
+            height: auto;
+            border: 2px solid black;
+            float: left;
+            margin-right: 30px;
+        }
+        .portrait-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 5px; /* Örnek resimden daha uyumlu bir uzaklık */
+        }
+        .portrait-text {
+            flex: 1;
+            text-align: left;
+            padding-right: 20px;
+        }
+        .portrait-image {
+            flex: 0 0 290px;
+            text-align: right;
+        }
+        .portrait-image img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid black;
+        }
+        .quote-table {
+            background-color: #001f3f;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 50px;
+			font-style:italic;
+			font-family:Times New Roman;
+        }
+        .example-image {
+            display: block;
+            margin: 18px auto;
+            max-width: 80%;
+            height: auto;
+            border: 2px solid black;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+		.tabbed-paragraph {
+            text-indent: 1em;
+			font-size: 17px;
+			font-family: "Times New Roman", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="blur-background"></div><!-- 1.sayfadaki gibi flue arka plan -->
+    <div class="container">
+        <a href="engsyf2.html" class="english-button">English</a>
+        <nav>
+            <a href="index.html">Ana Sayfa</a><!-- index sayfaya bağlantı -->
+			<a href="sayfa1.html">Cahit Arf'in Hayatı</a>
+            <a href="sayfa2.html">Arf Sabiti</a>
+            <a href="sayfa3.html">Arf Halkaları</a>
+            <a href="sayfa4.html">Arf Kapanışları</a>
+        </nav>
+        <h1>Arf Sabiti</h1>
+        <img src="formula.png" alt="Arf Sabiti" class="formula-image">
+        <p class="tabbed-paragraph">Arf Sabiti, Cahit Arf tarafından tanımlanan ve kuadratik formların sınıflandırılmasında kullanılan bir matematiksel terimdir. Kuadratik formlar, birden fazla değişkene bağlı olarak ikinci dereceden ifadelerin analizini içerir.</p>
+        <p class="tabbed-paragraph">Arf Sabiti, kuadratik form üzerindeki bir izometrik sınıflandırma aracıdır ve kuadratik formların indirgenmesinde temel bir rol oynar. Bu sabit, bir kuadratik formun modüler bir yüzey üzerinde sınıfını belirlemek için kullanılır. Özellikle sonlu alanlar üzerinde tanımlanan kuadratik formların incelenmesinde, ve bu formun geometrik veya cebirsel özelliklerini karakterize etmek için kullanılır.</p>
+        
+        <h2>Arf Sabiti Kullanım Alanları</h2>
+        <ul>
+            <li><strong>Cebirsel Geometri:</strong> Kuadratik yüzeylerin ve modüler formların sınıflandırılmasında kullanılır.</li>
+            <li><strong>Sonlu Alanlar:</strong> Sonlu alanlar üzerinde tanımlanan kuadratik formların sınıflandırılması için kritik bir parametredir.</li>
+            <li><strong>Kriptografi:</strong> Modern şifreleme algoritmalarında sonlu alan teorisi ile ilişkilidir.</li>
+            <li><strong>Modüler Temsil:</strong> Kuadratik modüllerin sınıflandırılması gibi soyut matematiksel konularda kullanılır.</li>
+        </ul>
+
+        <h2>Arf Sabiti Örneği</h2>
+        <p>Aşağıdaki resimde, Arf Sabiti'ne dair bir örnek hesaplama bulunmaktadır:</p>
+        <img src="arfsabitiornek.png" alt="Arf Sabiti Örneği" class="example-image">
+		
+		
+       
+        <div class="portrait-section">
+            <div class="portrait-text">
+                <h2>10 TL'nin Arkasındaki Portre</h2>
+				<p class="tabbed-paragraph">Türkiye Cumhuriyeti, bilim insanları ve sanatçıları onurlandırmak için para tasarımlarında onlara yer vererek bilim ve kültüre verdiği önemi göstermektedir. Cahit Arf'in portresi de 10 TL'nin arkasında yer alır. Arf'in portresi, onun bilime yaptığı katkıları onurlandırmak ve yeni nesillere ilham vermek amacıyla seçilmiştir. Matematik, mühendislik ve fizik gibi alanlarda eğitim alan birçok kişi, onun adıyla karşılaşarak mirasını halen yaşatıyor.</p>
+            </div>
+            <div class="portrait-image">
+                <img src="10TL.jpg" alt="Cahit Arf Portresi">
+            </div>
+        </div>
+		
+
+        <table class="quote-table">
+            <tr>
+                <td>"Matematiği ezberlemeyin, kendiniz anlayın ve yapın." - Cahit Arf</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cahit Arf'in Hayatı</title>
+    <style>
+        /* Arka plan resmi ve flu efekt */
+        body {
+            margin: 0;
+            padding: 0;
+            padding: 0;
+            font-family: "Times New Roman", sans-serif;
+            background: url('cahitarf.png.png') no-repeat center center fixed; /* Resmi ortala */
+            background-size: cover; /* Resim tüm ekranı kaplasın */
+        }
+
+        /* Flu arka plan için ayrı bir katman */
+        .blur-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(8px); /* Flu efekti */
+            z-index: 0; /* İçeriğin altında kalsın */
+        }
+
+        /* İçerik kapsayıcı */
+        .container {
+            position: relative; /* Flu efektten etkilenmesin */
+            z-index: 1; /* Arka planın üzerinde kalsın */
+            background-color: rgba(255, 255, 255, 0.9); /* Yarı saydam beyaz arka plan */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 900px;
+            margin: 50px auto; /* Ortala */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Hafif gölge efekti */
+            color: black; /* Yazı rengi */
+        }
+
+        /* Menü */
+        nav {
+            position: absolute;
+            top: 50px;
+            right: 40px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            border-bottom: 1px solid black;
+            padding: 10px 0;
+            font-size: 20px; /* Punto büyüt */
+            font-family: Bodoni MT;
+        }
+
+        nav a:last-child {
+            border-bottom: none;
+        }
+
+        /* English butonu */
+        .english-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px 15px;
+            font-size: 14px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .english-button:hover {
+            background-color: #0056b3; /* Hover efekti */
+        }
+
+        /* Başlık */
+        h1 {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        /* Resim */
+        img {
+            display: block;
+            margin: 20px auto;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        /* Tablo */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white; 
+            color: black; /* Siyah yazı */
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Öne çıkan kutu */
+        .highlight {
+            margin: 25px 0;
+            padding: 20px;
+            border: 1px solid black;
+            background-color: #e0f7fa; /* Buz mavisi */
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .left-align {
+            text-align: left;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 20px 0 10px 0;
+        }
+
+        .tabbed-paragraph {
+            text-indent: 1em;
+			font-size: 17px;
+			font-family: "Times New Roman", sans-serif;
+        }
+
+        /* En alttaki kutu */
+        .footer-quote {
+            background-color: #FAFAD2; /* Açık sarı */
+            color: black; /* Siyah yazı */
+            text-align: center;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-style: italic;
+            border: 2px solid black; 
+    </style>
+</head>
+<body>
+    <!-- Flu arka plan katmanı -->
+    <div class="blur-background"></div>
+
+    <!-- English butonu -->
+    <a href="engsyf1.html" class="english-button">English</a><!-- Her sayfanın ingilizcesi de mevcuttur -->
+
+    <!-- İçerik -->
+    <nav>
+        <a href="index.html">Ana Sayfa</a><!-- index sayfaya bağlantı -->
+	    <a href="sayfa1.html">Cahit Arf'in Hayatı</a><!-- diğer sayfalara da bağlantı eklenerek daha kullanışlı bir site oluşturmak istedim -->
+        <a href="sayfa2.html">Arf Sabiti</a>
+        <a href="sayfa3.html">Arf Halkaları</a>
+        <a href="sayfa4.html">Arf Kapanışları</a>
+    </nav>
+    <div class="container">
+        <img src="cahitarf.png.png" alt="Cahit Arf" width="500">
+        <h1>Cahit Arf'in Hayatı</h1>
+        <p class="tabbed-paragraph">Cahit Arf (24 Ekim 1910, Selanik - 26 Aralık 1997, İstanbul), Türk matematikçi ve bilim insanıdır. Matematik ve bilim dünyasına önemli katkılar yapmış, kendi adıyla anılan “Arf Sabiti”, “Arf Halkaları” ve “Arf Kapanışları” gibi terimleri geliştirmiştir. Ayrıca Alman matematikçi Helmut Hesse ile birlikte Hesse-Arf Kuramı'nı geliştirmiştir.</p>
+        <div class="highlight">
+            <div class="left-align">Eğitim Hayatı</div>
+            <p class="tabbed-paragraph">Yüksek öğrenimini Fransa’da École Normale Supérieure’de tamamlayan Arf, Galatasaray Lisesi’nde matematik öğretmenliği yaptı. Ardından doktorasını Göttingen Üniversitesi’nde tamamladı. Türkiye’ye döndükten sonra İstanbul Üniversitesi’nde profesör ve Ordinaryus profesörlük unvanlarını aldı. Ortadoğu Teknik Üniversitesi’nde dersler vermiş, TÜBİTAK’ın ilk bilim kurulu başkanı olmuştur. Türk Matematik Derneği başkanlığı yapmıştır.</p>
+            <p class="tabbed-paragraph"> Arf, İnönü Armağanı (1943) ve TÜBİTAK Bilim Ödülü (1974) gibi prestijli ödüllerin sahibidir. “Matematik esas olarak sabır olayıdır. Ezberleyerek değil, keşfederek anlamak gerekir.” sözleri, onun bilime yaklaşımını özetlemektedir.</p>
+        </div>
+        <table>
+            <tr>
+                <th>Doğum</th>
+                <td>24 Ekim 1910</td>
+            </tr>
+            <tr>
+                <th>Ölüm</th>
+                <td>26 Aralık 1997</td>
+            </tr>
+            <tr>
+                <th>Eğitim</th>
+                <td>École Normale Supérieure, Göttingen Üniversitesi</td>
+            </tr>
+            <tr>
+                <th>Kariyer</th>
+                <td>İstanbul Üniversitesi, ODTÜ, TÜBİTAK</td>
+            </tr>
+        </table>
+        <div class="footer-quote">
+            "Matematik esas olarak sabır olayıdır. Ezberleyerek değil, keşfederek anlamak gerekir."   - Cahit Arf
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <style>
+        /* Sayfanın genel stil ayarları */
+        body {
+            font-family: Times New Roman, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+
+        body::before {
+            content: "";
+            background-image: url('indexfon.png'); /* Arka planda kullanılacak resim */
+            background-size: cover;
+            background-position: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            filter: blur(5px); /* Flulaştırma efekti */
+        }
+
+        .container {
+            margin: 50px auto;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.9); /* Opak beyaz zemin */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 20px;
+			width: 80%; /* Konteynerin genişlik ayarı */
+        }
+
+        /* Sol yazı alanı */
+        .text-area {
+            flex: 2;
+            font-size: 18px;
+            text-indent: 40px; /* Girinti */
+			line-height: 1.6;
+        }
+
+        /* Tablonun stili */
+        table {
+            flex: 1;
+            border-collapse: collapse;
+            background-color: #e1f0f7; /* Tablo arka planı beyaz */
+            margin-left: auto; /* Tabloyu sağa */
+            width: 100%;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #dbe5e7;
+        }
+
+        th {
+            background-color: #bcccdc;
+        }
+
+        /* Butonlar için stil */
+        .buton-container {
+            text-align: center;
+            clear: both; /* Tablolar yan yana */
+        }
+
+        .buton-container button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #000080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            width: 200px;
+        }
+
+        .btn-container button:hover {
+            background-color: #45a049;
+        }
+
+        /* Başlık için stil */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .english-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px 15px;
+            font-size: 15px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .english-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <a href="engindex.html" class="english-button">English</a>
+    <header>
+        <h1>Matematik Bloğum</h1>
+    </header>
+
+    <div class="container">
+        <!-- Yazı alanı -->
+        <div class="text-area">
+            <h2>Cahit Arf'in Matematik Mirasını Öğrenmek İster Misiniz?</h2>
+            <p>Haydi hazırlanın Cahit Arf'in dünyasına gidiyoruz :)</p>
+            <p>Bu önemli matematikçimizin adını çoğumuz duymuşuzdur. Ben bu isimle ilk defa ilkokul yıllarımda karşılaştım. Matematik dersinde paralarla dört işlem yaparken 10 Türk lirasının arkasındaki Arf Sabiti formülü dikkatimi oldukça çekmişti fakat ne işe yaradığını, nerelerde kullanıldığını pek anlayamamıştım. Üniversite okurken aldığımız derslerde bu formülle tekrardan karşılaştım. Zannettiğimden çok daha değerli olan bu formül karmaşık ve soyut cebirsel işlemlerde kullanılıyordu ama kullanım alanları yalnızca cebirden ibaret değildi. Merakım gittikçe artmıştı, araştırmalar yapmaya başladım. Yaptığım araştırmaları web sayfalarına dönüştürerek matematik blogumda paylaşmak istedim. Benim gibi Cahit Arf'in bir sonraki nesillere bıraktığı bu mirasın peşine düşenler için haydi başlayalım.</p>
+        </div>
+
+        <!-- Tablo -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Başlıklar</th>
+                    <th>Kısaca İçerik</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cahit Arf'in Hayatı</td>
+                    <td>Cahit Arf'in biyografisi ve bilim dünyasına katkıları.</td>
+                </tr>
+                <tr>
+                    <td>Arf Sabiti</td>
+                    <td>Arf Sabiti'nin matematiksel anlamı ve kullanımı.</td>
+                </tr>
+                <tr>
+                    <td>Arf Halkaları</td>
+                    <td>Arf Halkaları hakkında detaylı açıklamalar.</td>
+                </tr>
+                <tr>
+                    <td>Arf Kapanışları</td>
+                    <td>Hesse-Arf Kuramı ve matematiksel uygulamaları.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Butonlar -->
+    <div class="buton-container">
+        <button onclick="location.href='sayfa1.html'">Cahit Arf'in Hayatı</button>
+        <button onclick="location.href='sayfa2.html'">Arf Sabiti</button>
+        <button onclick="location.href='sayfa3.html'">Arf Halkaları</button>
+        <button onclick="location.href='sayfa4.html'">Arf Kapanışları</button>
+    </div>
+</body>
+</html>
